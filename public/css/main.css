@@ -66,52 +66,42 @@
 
 .main-content {
 	width: 100%;
-	margin-top: 60.4px;
+	margin-top: 60px;
 }
 
 .story {
-	margin: 0 auto;
-	max-width: 700px;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
-
-.list {}
 
 .story__list {
 	list-style: none;
 	width: 100%;
 	margin: 0;
-	padding: 1.2em 0;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+	padding: 1em 0;
 	overflow-x: auto;
 }
 
 .story__item {
-	margin: 0 0.5em;
+	margin: 0 0.3em;
 }
 
-.story__link {
-	height: 5.5em;
-	width: 5.5em;
-	border-radius: 100%;
+.story__btn {
 	overflow: hidden;
-	display: flex;
 	border: double 8px transparent;
+	border-radius: 100%;
 }
 
-.story__item--active .story__link {
+.story__btn--new {
 	border-color: white;
 	background-image: linear-gradient(white, white), radial-gradient(circle at top right, #f00,#fba365);
 	background-origin: border-box;
 	background-clip: content-box, border-box;
 }
 
-.story__image {
-	height: 100%;
-	width: 100%;
+.story__photo {
+	height: 4.1em;
+	width: 4.1em;
 }
 
 .feed {
