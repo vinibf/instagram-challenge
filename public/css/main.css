@@ -6,47 +6,65 @@
 	box-sizing: border-box;
 }
 
-body {
-	background: #fafafa;
+.vert-flex {
 	display: flex;
 	flex-direction: column;
+}
+
+.hor-flex {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.hor-flex--between {
+	justify-content: space-between;
+}
+
+.hor-flex--left {
+	justify-content: flex-start;
+}
+
+.body {
+	background-color: #fafafa;
 	font-family: 'Open Sans', sans-serif;
+	color: #000;
 }
 
 .header {
 	position: fixed;
 	width: 100%;
-	background: #fff;
-	box-shadow: 0 0.1em 0 #231f2017;
+	background-color: #fff;
+	box-shadow: 0 0.1em 0 rgba(0, 0, 0, .1);
 	padding: 0.6em 1.2em;
 }
 
-.header__container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.container {
 	margin: 0 auto;
 	max-width: 700px;
-	font-size: 1.2em;
 }
 
-.header__link {
+.link {
 	display: flex;
+	text-decoration: none;
 }
 
 .header__logo {
-	width: 6.8em;
+	width: 8em;
 }
 
-.header__send {
+.button {
 	background-color: transparent;
 	border: none;
 	padding: 0;
 	display: flex;
-	color: #000;
 }
 
-.content {
+.header__send-btn {
+	font-size: 1.2em;
+}
+
+.main-content {
 	width: 100%;
 	margin-top: 60.4px;
 }
@@ -57,6 +75,8 @@ body {
 	overflow-x: hidden;
 	overflow-y: auto;
 }
+
+.list {}
 
 .story__list {
 	list-style: none;
@@ -134,7 +154,6 @@ body {
 }
 
 .author__name {
-	color: #000;
 	font-weight: bold;
 	font-size: 0.9em;
 	margin: 0;
@@ -142,7 +161,6 @@ body {
 
 .post__options {
 	background-color: transparent;
-	color: #000;
 	border: none;
 	padding: 0;
 	display: flex;
@@ -159,7 +177,6 @@ body {
 	align-items: center;
 	padding: 0.6em;
 	font-size: 1.6em;
-	color: #000;
 }
 
 .actions__left {
@@ -228,7 +245,6 @@ body {
 
 .engagement__main {
 	text-decoration: none;
-	color: #000;
 	font-weight: bold;
 }
 
